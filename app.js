@@ -15,3 +15,11 @@ const second = document.getElementById("second");
 
 const noon = document.getElementById("noon");
 
+
+setInterval(() => {
+  let date = new Date();
+
+  date.getSeconds() < 10 ? second.innerHTML = "0" + date.getSeconds() : second.innerHTML = date.getSeconds();
+
+
+}, 1000);
