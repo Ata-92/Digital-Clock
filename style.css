@@ -11,3 +11,16 @@ body {
   align-items: center;
 }
 
+.container {
+  background-color: antiquewhite;
+  border-radius: 1rem;
+  color: aqua;
+  width: 50%;
+  margin: auto;
+  font-size: 5vw;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
