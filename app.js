@@ -35,5 +35,10 @@ setInterval(() => {
 
   weekday.innerHTML = weekdays[date.getDay()];
 
+  date.getDate() < 10 ? day.innerHTML = "0" + date.getDate() : day.innerHTML = date.getDate();
+
+  date.getMonth() < 9 ? month.innerHTML = "0" + (parseInt(date.getMonth()) + 1) : month.innerHTML = parseInt(date.getMonth()) + 1;
+
+  year.innerHTML = date.getFullYear();
 
 }, 1000);
