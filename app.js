@@ -31,4 +31,9 @@ setInterval(() => {
     hour.innerHTML = "0" + date.getHours();
   } else hour.innerHTML = date.getHours();
 
+  date.getHours() > 11 ? noon.innerHTML = "PM" : noon.innerHTML = "AM";
+
+  weekday.innerHTML = weekdays[date.getDay()];
+
+
 }, 1000);
